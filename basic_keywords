@@ -1,0 +1,17 @@
+---------------------------------------API---------------------------------------- 
+API stands for Application Programming Interface. It is a set of rules and protocols that defines how software programs and systems can communicate with each other. It acts as an intermediatery between the two systems allowing them to exchange data and functionality. They are widely used in web development to enable the integration of different services and applications, such as connecting a web application to a database or integrating third-party services like payment gateways or social media platforms.
+
+-------------------------------------RESTful API----------------------------
+A RESTful API (Representational State Transfer API) is an API that adheres to the principles and constraints of REST (Representational State Transfer). REST is an architectural style for designing networked applications, particularly web services, that communicate over HTTP.
+
+HTTP Methods in RESTful APIs
+RESTful APIs commonly use standard HTTP methods to perform CRUD (Create, Read, Update, Delete) operations on resources:
+
+GET: Retrieve a representation of a resource.
+POST: Create a new resource.
+PUT: Update an existing resource or create a new resource if it does not exist.
+DELETE: Delete a resource
+
+-------------------------------------Node-------------------
+
+Node.js is a runtime environment that allows you to run JavaScript code on the server side. It uses the V8 JavaScript engine (developed by Google for Chrome)and for firefox(spider monkey)
