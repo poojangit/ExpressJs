@@ -15,3 +15,21 @@ DELETE: Delete a resource
 -------------------------------------Node-------------------
 
 Node.js is a runtime environment that allows you to run JavaScript code on the server side. It uses the V8 JavaScript engine (developed by Google for Chrome)and for firefox(spider monkey)
+
+---------------------------Library-------------------
+A library is a collection of pre-written code that developers can use to perform common tasks and functions. Libraries provide specific functionalities and are used to simplify complex tasks by offering reusable components. When you use a library, you call its functions or methods directly in your code. The control flow of the program remains in your hands.
+
+-----------------------Framework-----------------------------------
+A framework is a comprehensive platform that provides a foundation and structure for developing applications. Frameworks dictate the architecture and flow of the application and often come with predefined conventions and patterns. When you use a framework, you follow its rules and structure, and the framework often calls your code at specific points.
+
+--------------------Library & framework---------------
+The technical difference between the library and framework due to the inversion of control.
+This means the developer decides when to call the library. However, when we use a framework, the framework decides when to call the library. 
+
+---------------------------ORM (Object-Relational Mapping)---------------
+ORM is a technique that allows developers to interact with a relational database using an object-oriented paradigm. It maps database tables to classes in a programming language, enabling developers to perform database operations without writing raw SQL queries.
+
+---------------------------ODM (Object-Document Mapping)-------------------
+ODM is similar to ORM but is used for interacting with document-oriented databases, such as MongoDB. It maps documents in the database to objects in the programming language, allowing for object-oriented manipulation of data.
+
+
