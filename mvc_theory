@@ -1,0 +1,38 @@
+----------------------------------MVC--------------------------------------
+
+MVC stands for Model-View-Controller, a design pattern used for developing web applications. It divides the application into three interconnected components, each with distinct responsibilities, which helps organize code and separates concerns. Here’s a breakdown of each component
+
+1. Model
+
+ Represents the data and the business logic of the application. It directly manages the data, logic, and rules of the application.
+-Interacts with the database.
+-Contains the business logic.
+-Manages the state of the application.
+
+2. View
+
+The user interface of the application. It displays the data provided by the model in a specific format. The view is responsible for rendering data to the user and sending user actions back to the controller.
+-Displays data to the user.
+-Collects user input and sends it to the controller.
+
+3.Controller
+
+Acts as an intermediary between the Model and the View. It listens to user input, processes it (often invoking model methods), and determines which view to display.
+-Receives user input.
+-Calls model methods to handle data.
+-Decides which view to display.
+
+------------------------------MVC Flow-------------------
+User Interaction:
+The user interacts with the application through the view (e.g., clicking a button, submitting a form).
+
+Controller Handling:
+The controller receives the user input and processes it (e.g., extracting form data, handling request parameters).
+
+Model Interaction:
+The controller interacts with the model to perform necessary actions (e.g., querying the database, updating records).
+
+View Rendering:
+The controller selects the appropriate view and passes the model data to it.
+The view renders the data in a user-friendly format and sends it back to the user.
+
