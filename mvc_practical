@@ -1,0 +1,80 @@
+mvc - pattern for which we structure the project
+# It is divided into three parts --
+ models
+ view 
+ controllers
+ 
+ # in project, view we cannot see but definately we can see models and controllers
+ 
+ # routes - routes includes all the different types of routes
+   if i creating a project which has user so we will create a route called user inside that we can perform many operation (CRUD)
+   
+ # models - here we define the structure of schemas
+           here I used sequalize so I have defined sequalize
+           this is done just to oraganize our queries
+           
+ # controllers - here basically we execute all the different things that we want to do in data
+                that means to manage the data and to request whatever we have created in models
+
+routes - User.js----------------
+             
+  const express = require('express')
+const router = express.Router()
+
+router.get('/', (req, res) => {
+    res.send("you just created");
+});
+
+module.exports = router
+
+src - index.js--------------
+
+const express = require('express');
+
+const app = express()
+
+const userRoute = require('./routes/User')
+app.use('/user',userRoute)
+
+app.listen(3005, () => {
+  console.log(`Server started on port`);
+});
+
+with mv pattern --
+
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+app.use(bodyParser.json());
+
+const userRoute = require('./routes/User');
+app.use('/user', userRoute);
+
+app.listen(3005, () => {
+  console.log(`Server started on port 3005`);
+});
+
+
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/UserController');
+
+router.get("/", controller.get);
+
+router.post("/", controller.post);
+
+module.exports = router;
+
+
+module.exports = {
+    get: (req, res) => {
+        res.send("Hellooo");
+    },
+    post: (req, res) => {
+        const newUser = req.body;
+        res.status(201).json(newUser);
+    }
+}
+
